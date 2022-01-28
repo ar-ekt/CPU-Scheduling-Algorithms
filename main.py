@@ -2,10 +2,10 @@ from pandas import read_csv
 from copy import deepcopy
 from typing import List
 from process import Process
-from fcfs import FCFS
-from rr import RR
-from sjf import SJF
-from mlfq import MLFQ
+from scheduling_algorithms.fcfs import FCFS
+from scheduling_algorithms.rr import RR
+from scheduling_algorithms.sjf import SJF
+from scheduling_algorithms.mlfq import MLFQ
 
 
 def process_generator(csv_file_name: str) -> List[Process]:
